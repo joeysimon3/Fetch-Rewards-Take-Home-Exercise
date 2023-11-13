@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import ttk
 from pandas import to_datetime
 # Sample DataFrame
-df = pd.read_csv('../Data/predicted_data.csv')
+df = pd.read_csv('Data/predicted_data.csv')
 print(df)
 # Function to calculate the sum
 def calculate_sum():
