@@ -20,7 +20,7 @@ def create_dataset(X, Y, time_step=1):
         Ys.append(Y[i + time_step])
     return np.array(Xs), np.array(Ys)
 
-df = pd.read_csv('../Data/data.csv')
+df = pd.read_csv('Data/data.csv')
 df['x'] = list(range(1,len(df)+1))
 df['y'] = df['receipt_count'].shift(-1)/df['receipt_count']-1
 
@@ -102,6 +102,6 @@ dump_df = pd.DataFrame(date_range, columns=['date'])
 dump_df['month'] = dump_df['date'].dt.month
 dump_df['day'] = dump_df['date'].dt.day
 dump_df['predicted_values'] = preds
-dump_df.to_csv('../Data/predicted_data.csv',index=False)
+dump_df.to_csv('Data/predicted_data.csv',index=False)
 
 
