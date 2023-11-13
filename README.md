@@ -11,4 +11,6 @@ Script is run with Python3 and uses Tensorflow for the AI model and Tkinter for 
   virtualenv venv
   source venv/bin/activate
   ```  
-  You can simply enter ```shell deactivate``` to exit the virtual environment.
+  You can simply enter ```deactivate``` to exit the virtual environment.
+
+  2) Execute the dependencies 
